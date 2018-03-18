@@ -1,4 +1,5 @@
 Django==2.0.3
 django-bootstrap-themes==3.3.6
 django-bootstrap3==9.1.0
+django-bootstrap4==0.0.6
 pytz==2018.3

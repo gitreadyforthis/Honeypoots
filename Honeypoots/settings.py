@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'PotMaster.apps.PotmasterConfig',
-    'bootstrap3',
+    'bootstrap4',
+    'bootstrap_themes',
+
 ]
 
 MIDDLEWARE = [
