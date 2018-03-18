@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from PotMaster import views
+
 urlpatterns = [
+    path('', views.mainpage, name='home'),
     path('admin/', admin.site.urls),
 ]
