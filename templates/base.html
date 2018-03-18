@@ -5,7 +5,6 @@
 
 {% block bootstrap4_extra_head %}
 
-
     <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static 'css/sb-admin.min.css' %}" rel="stylesheet">
 
@@ -29,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                    <a class="nav-link" href="{% url 'home' %}">
+                    <a class="nav-link" href="{% url 'dash' %}">
                         <i class="fa fa-fw fa-dashboard"></i>
                         <span class="nav-link-text">Dashboard</span>
                     </a>
@@ -50,15 +49,17 @@
             <!-- Breadcrumbs-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <a href="{% url 'home' %}">Dashboard</a>
+                    <a href="{% url 'dash' %}">Dashboard</a>
                 </li>
                 <li class="breadcrumb-item active">Blank Page</li>
             </ol>
             <div class="row">
                 <div class="col-12">
-                    <h1>Blank</h1>
+                    {% block body%}
+                        <h1>Blank</h1>
                     <p>This is an example of a blank page that you can use as a starting point for creating new
                         ones.</p>
+                        {% endblock %}
                 </div>
             </div>
         </div>

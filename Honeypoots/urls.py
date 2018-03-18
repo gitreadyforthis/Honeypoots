@@ -20,5 +20,7 @@ from PotMaster import views
 
 urlpatterns = [
     path('', views.mainpage, name='home'),
+    path('dashboard/', views.dashboard, name='dash'),
     path('admin/', admin.site.urls),
+
 ]
