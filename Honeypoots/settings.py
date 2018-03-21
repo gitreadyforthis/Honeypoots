@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'PotMaster.apps.PotmasterConfig',
     'bootstrap4',
     'bootstrap_themes',
+    'graphos',
 
 ]
 
